@@ -31,8 +31,9 @@ img{
     width: 1000px;
     display: flex;
     align-content: center;
-    flex-direction: column;
-
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 100px;
     /*
         TODO:
         - Center up the page
@@ -46,6 +47,7 @@ img{
         - Flexbox property here
     */
     flex-direction: row;
+    width: 100%;
 
 }
 #site-header div{
@@ -86,6 +88,7 @@ img{
     background: #444;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 
     /*
         TODO:
@@ -98,15 +101,15 @@ img{
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px 20px;
-    justify-content: space-around;
+    width: 110%;
     /*
         TODO:
         - Flexbox - Create general spacing between nav links
     */
 }
 #main-navigation #logo{
-    margin-right: 400px;
-    flex-grow: 5;
+    width: 500%;
+
     /*
         TODO:
         - Flexbox - The logo needs to take up more space
@@ -117,6 +120,11 @@ main{
     padding: 20px;
     background-color: #444;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
+    width: 600px;
+    position: relative;
+    margin-top: -50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
 
     /*
         TODO:
@@ -128,6 +136,12 @@ aside{
     padding: 20px;
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
+    width: 200px;
+    position: relative;
+    margin-top: -50px;
+    margin-bottom: 50px;
+
+
     /*
         TODO:
         - Flexbox: Set the starting width of this element
@@ -168,6 +182,11 @@ article time{
     color: #666;
 }
 article img{
+    float: right;
+    width: 278px;
+    height: 216px;
+    padding: 10px;
+
     /*
         TODO:
         - Float article images to the right
@@ -175,6 +194,15 @@ article img{
     */
 }
 article footer p{
+  line-height: 0.5em;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 10px 0;
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid #ccc;
+  text-transform: uppercase;
+
     /*
         TODO:
         - Style the article footer
