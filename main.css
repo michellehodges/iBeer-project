@@ -29,6 +29,9 @@ img{
 }
 .wrapper{
     width: 1000px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
 
     /*
         TODO:
@@ -42,11 +45,14 @@ img{
         TODO
         - Flexbox property here
     */
+    flex-direction: row;
+
 }
 #site-header div{
     text-align: center;
     padding: 60px 0 120px 0;
     font-size: 4em;
+    background-image: url(/Users/mischy/Desktop/b52ad1ce-ibeer_starter_files/ibeer_starter_files/img/header-img.jpg);
 
     /*
         TODO:
@@ -70,6 +76,7 @@ img{
     color: white;
     bottom: 20px;
     text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3 );
+    font-family: Dancing Script;
     /*
         TODO:
         - Use the script font: 'Dancing Script' fot this text
@@ -77,6 +84,8 @@ img{
 }
 #main-navigation{
     background: #444;
+    display: flex;
+    flex-direction: row;
 
     /*
         TODO:
@@ -89,7 +98,7 @@ img{
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px 20px;
-
+    justify-content: space-around;
     /*
         TODO:
         - Flexbox - Create general spacing between nav links
@@ -97,7 +106,7 @@ img{
 }
 #main-navigation #logo{
     margin-right: 400px;
-
+    flex-grow: 5;
     /*
         TODO:
         - Flexbox - The logo needs to take up more space
@@ -108,6 +117,7 @@ main{
     padding: 20px;
     background-color: #444;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
+
     /*
         TODO:
         - Flexbox: Set the starting width of this element
